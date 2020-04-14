@@ -124,6 +124,7 @@ func Build(build *drone.Build) map[string]string {
 		"DRONE_BUILD_PARENT":         fmt.Sprint(build.Parent),
 		"DRONE_BUILD_EVENT":          build.Event,
 		"DRONE_BUILD_ACTION":         build.Action,
+		"DRONE_BUILD_TRIGGER":        build.Trigger,
 		"DRONE_BUILD_STATUS":         "success",
 		"DRONE_BUILD_CREATED":        fmt.Sprint(build.Created),
 		"DRONE_BUILD_STARTED":        fmt.Sprint(build.Started),
